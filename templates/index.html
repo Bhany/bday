@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+  </head>
+
+ <body>
+    <div id="outside">
+    <img id="outside-pic" alt="full image" src= {{ url_for('static', filename = 'images/gimmename.jpg') }}>
+    
+    <img><br>
+    
+    <script>
+      function setURL(){
+      var name = document.getElementById("bname").value;
+      window.location.href = "/user/"+name;
+    }
+    </script>
+    
+    <input type="Text" id="bname" value='YeOlFart'/>
+    <input type='button' onclick='setURL()' value='is me name ...'> 
+    </div>
+  </body>
+  
+</html>

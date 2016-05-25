@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+    <script src="{{ url_for('static',filename='styles/script.js') }}"></script>
+  </head>
+
+  <body>
+    <div id="outside">
+      <iframe width="480" height="360" src="https://www.youtube.com/embed/etEQz7NYSLg?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+      
+      <img><br>
+      <input type='button' onclick='open_card()' value='Correct!'> 
+
+    </div>
+  
+    <div id="inside"> 
+      <img id="inside-pic" src= {{ url_for('static', filename = 'images/bday.jpg') }}>
+      <br>
+      <script>
+        function setURL(){
+        window.location = 'http://www.gmail.com';
+      }
+      </script>
+      
+    <input type='button' onclick='setURL()' value='Lets GOOO!'> 
+    </div>
+    
+  </body>
+  
+</html>
